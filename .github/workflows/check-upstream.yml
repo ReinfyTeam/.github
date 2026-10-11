@@ -100,7 +100,7 @@ jobs:
                 status="Update available"
                 echo "::warning title=${repository} update::${latest} is newer than tested baseline ${tested}. Review the compatibility gates before updating."
               fi
-              echo "| [${repository}](${url}) | ${tested} | ${latest} | `${commit}` | ${status} |"
+              echo "| [${repository}](${url}) | ${tested} | ${latest} | '${commit}' | ${status} |"
             done
           } | tee -a "${GITHUB_STEP_SUMMARY}"
 
